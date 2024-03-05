@@ -13,6 +13,19 @@
 		395D9A7B2B96532600BF527F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395D9A792B96532600BF527F /* Main.storyboard */; };
 		395D9A7D2B96532700BF527F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395D9A7C2B96532700BF527F /* Assets.xcassets */; };
 		395D9A802B96532700BF527F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395D9A7E2B96532700BF527F /* LaunchScreen.storyboard */; };
+		93AEC4272B97041100705498 /* HaloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4262B97041100705498 /* HaloButton.swift */; };
+		93AEC42A2B97085800705498 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4292B97085800705498 /* Properties.swift */; };
+		93AEC42D2B97098000705498 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC42C2B97098000705498 /* UIColor + Extension.swift */; };
+		93AEC4322B9731D100705498 /* MatchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4312B9731D100705498 /* MatchListVC.swift */; };
+		93AEC4342B9735E100705498 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4332B9735E100705498 /* TabBarController.swift */; };
+		93AEC4362B974C0200705498 /* CustomTabBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4352B974C0200705498 /* CustomTabBarHelper.swift */; };
+		93AEC4382B974C2300705498 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4372B974C2300705498 /* UIImageView+Extension.swift */; };
+		93AEC43A2B97510700705498 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4392B97510700705498 /* UIApplication+Extension.swift */; };
+		93AEC43D2B97554E00705498 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC43C2B97554E00705498 /* NavigationBar.swift */; };
+		93AEC43F2B97556B00705498 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEC43E2B97556B00705498 /* NavigationBar.xib */; };
+		93AEC4412B9756E100705498 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4402B9756E100705498 /* BaseVC.swift */; };
+		93AEC4452B97606700705498 /* MatchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4432B97606700705498 /* MatchListCell.swift */; };
+		93AEC4462B97606700705498 /* MatchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEC4442B97606700705498 /* MatchListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		395D9A7C2B96532700BF527F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395D9A7F2B96532700BF527F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		395D9A812B96532700BF527F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AEC4262B97041100705498 /* HaloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaloButton.swift; sourceTree = "<group>"; };
+		93AEC4292B97085800705498 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		93AEC42C2B97098000705498 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		93AEC4312B9731D100705498 /* MatchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListVC.swift; sourceTree = "<group>"; };
+		93AEC4332B9735E100705498 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		93AEC4352B974C0200705498 /* CustomTabBarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarHelper.swift; sourceTree = "<group>"; };
+		93AEC4372B974C2300705498 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		93AEC4392B97510700705498 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		93AEC43C2B97554E00705498 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		93AEC43E2B97556B00705498 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		93AEC4402B9756E100705498 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		93AEC4432B97606700705498 /* MatchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCell.swift; sourceTree = "<group>"; };
+		93AEC4442B97606700705498 /* MatchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,92 @@
 		395D9A722B96532600BF527F /* HaloHaven */ = {
 			isa = PBXGroup;
 			children = (
-				395D9A732B96532600BF527F /* AppDelegate.swift */,
-				395D9A752B96532600BF527F /* SceneDelegate.swift */,
-				395D9A772B96532600BF527F /* ViewController.swift */,
+				93AEC4302B9731AA00705498 /* Resources */,
+				93AEC42B2B97095300705498 /* Helper + Extension */,
+				93AEC4282B97082B00705498 /* Properties */,
+				93AEC4252B9703C700705498 /* AssetClasses */,
+				93AEC42E2B97319100705498 /* Views */,
 				395D9A792B96532600BF527F /* Main.storyboard */,
 				395D9A7C2B96532700BF527F /* Assets.xcassets */,
 				395D9A7E2B96532700BF527F /* LaunchScreen.storyboard */,
 				395D9A812B96532700BF527F /* Info.plist */,
 			);
 			path = HaloHaven;
+			sourceTree = "<group>";
+		};
+		93AEC4252B9703C700705498 /* AssetClasses */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC4262B97041100705498 /* HaloButton.swift */,
+			);
+			path = AssetClasses;
+			sourceTree = "<group>";
+		};
+		93AEC4282B97082B00705498 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC4292B97085800705498 /* Properties.swift */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		93AEC42B2B97095300705498 /* Helper + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC4372B974C2300705498 /* UIImageView+Extension.swift */,
+				93AEC4352B974C0200705498 /* CustomTabBarHelper.swift */,
+				93AEC42C2B97098000705498 /* UIColor + Extension.swift */,
+				93AEC4392B97510700705498 /* UIApplication+Extension.swift */,
+			);
+			path = "Helper + Extension";
+			sourceTree = "<group>";
+		};
+		93AEC42E2B97319100705498 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC4422B97604800705498 /* Cells */,
+				93AEC43B2B9753BF00705498 /* Views */,
+				93AEC42F2B97319D00705498 /* VC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93AEC42F2B97319D00705498 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC4402B9756E100705498 /* BaseVC.swift */,
+				395D9A772B96532600BF527F /* ViewController.swift */,
+				93AEC4312B9731D100705498 /* MatchListVC.swift */,
+				93AEC4332B9735E100705498 /* TabBarController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		93AEC4302B9731AA00705498 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				395D9A732B96532600BF527F /* AppDelegate.swift */,
+				395D9A752B96532600BF527F /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93AEC43B2B9753BF00705498 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC43C2B97554E00705498 /* NavigationBar.swift */,
+				93AEC43E2B97556B00705498 /* NavigationBar.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93AEC4422B97604800705498 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				93AEC4432B97606700705498 /* MatchListCell.swift */,
+				93AEC4442B97606700705498 /* MatchListCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +228,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AEC4462B97606700705498 /* MatchListCell.xib in Resources */,
 				395D9A802B96532700BF527F /* LaunchScreen.storyboard in Resources */,
 				395D9A7D2B96532700BF527F /* Assets.xcassets in Resources */,
 				395D9A7B2B96532600BF527F /* Main.storyboard in Resources */,
+				93AEC43F2B97556B00705498 /* NavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AEC4382B974C2300705498 /* UIImageView+Extension.swift in Sources */,
 				395D9A782B96532600BF527F /* ViewController.swift in Sources */,
+				93AEC4342B9735E100705498 /* TabBarController.swift in Sources */,
 				395D9A742B96532600BF527F /* AppDelegate.swift in Sources */,
+				93AEC4362B974C0200705498 /* CustomTabBarHelper.swift in Sources */,
 				395D9A762B96532600BF527F /* SceneDelegate.swift in Sources */,
+				93AEC42D2B97098000705498 /* UIColor + Extension.swift in Sources */,
+				93AEC4322B9731D100705498 /* MatchListVC.swift in Sources */,
+				93AEC4412B9756E100705498 /* BaseVC.swift in Sources */,
+				93AEC4452B97606700705498 /* MatchListCell.swift in Sources */,
+				93AEC43A2B97510700705498 /* UIApplication+Extension.swift in Sources */,
+				93AEC42A2B97085800705498 /* Properties.swift in Sources */,
+				93AEC4272B97041100705498 /* HaloButton.swift in Sources */,
+				93AEC43D2B97554E00705498 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FGKN2V3A4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HaloHaven/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -325,6 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FGKN2V3A4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HaloHaven/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
