@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xOk-Ac-eLq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xOk-Ac-eLq">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -252,10 +253,43 @@
                             <constraint firstItem="yFx-az-5Eg" firstAttribute="trailing" secondItem="Nff-Wk-CHh" secondAttribute="trailing" constant="16" id="vOs-a3-bzG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Nff-Wk-CHh" id="tLc-nO-t5I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfD-y7-aWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1733" y="-4"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="Y2R-em-Ipe">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" id="Pe4-8G-xUg" customClass="SearchVC" customModule="HaloHaven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZzU-sV-vZX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-pn-KZH">
+                                <rect key="frame" x="0.0" y="109" width="393" height="56"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Pe4-8G-xUg" id="TOy-20-zWv"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pNm-Um-KkS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tLR-pn-KZH" firstAttribute="leading" secondItem="pNm-Um-KkS" secondAttribute="leading" id="1ZH-LL-hvd"/>
+                            <constraint firstItem="tLR-pn-KZH" firstAttribute="top" secondItem="pNm-Um-KkS" secondAttribute="top" constant="50" id="CyM-tl-6gm"/>
+                            <constraint firstItem="tLR-pn-KZH" firstAttribute="trailing" secondItem="pNm-Um-KkS" secondAttribute="trailing" id="G4n-hJ-7oe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zn-fN-yvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="-4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x5t-22-aYw">
@@ -283,6 +317,9 @@
         <designable name="NQr-jo-uSU">
             <size key="intrinsicContentSize" width="180.66666666666666" height="35"/>
         </designable>
+        <designable name="Prs-sr-6b8">
+            <size key="intrinsicContentSize" width="25" height="28"/>
+        </designable>
         <designable name="gw9-HD-96p">
             <size key="intrinsicContentSize" width="194" height="35"/>
         </designable>
@@ -298,14 +335,17 @@
         <namedColor name="#E94057">
             <color red="0.9137254901960784" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,6 +40,9 @@
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="BackBtn"/>
+                            <connections>
+                                <action selector="backBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="sVB-tz-g0y"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -62,6 +66,10 @@
                 <constraint firstItem="ZgB-qI-FBP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xYu-3e-18F"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZgB-qI-FBP" secondAttribute="trailing" id="yXP-QC-KZS"/>
             </constraints>
+            <connections>
+                <outlet property="backBtn" destination="lnq-B8-d3N" id="ZmP-13-aYl"/>
+                <outlet property="title" destination="tRs-Ym-Pg1" id="rEQ-gL-Y6L"/>
+            </connections>
             <point key="canvasLocation" x="112" y="-11"/>
         </view>
     </objects>

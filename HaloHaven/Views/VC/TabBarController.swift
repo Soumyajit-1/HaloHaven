@@ -16,7 +16,7 @@ class TabBarController: UITabBarController{
     
     // View Controllers For Tab Bar
     let matchListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MatchListVC") as! MatchListVC
-    let searchVC = UIViewController()
+    let searchVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchVC") as! SearchVC
     let profileVC = UIViewController()
     
     let customTabBar = CustomTabBar()

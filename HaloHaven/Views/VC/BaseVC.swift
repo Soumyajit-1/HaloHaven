@@ -9,9 +9,8 @@ import UIKit
 
 class BaseVC: UIViewController {
     
-    var navBar : NavigationBar! = nil
-    
-    
+    var navBar: NavigationBar! = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,8 +26,7 @@ class BaseVC: UIViewController {
             navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             navBar.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
-        
+
     }
     
     func loadNavigationBar() -> NavigationBar {

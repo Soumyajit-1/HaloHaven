@@ -13,6 +13,8 @@
 		395D9A7B2B96532600BF527F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395D9A792B96532600BF527F /* Main.storyboard */; };
 		395D9A7D2B96532700BF527F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395D9A7C2B96532700BF527F /* Assets.xcassets */; };
 		395D9A802B96532700BF527F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395D9A7E2B96532700BF527F /* LaunchScreen.storyboard */; };
+		39BEF1802B9900170020D06B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEF17F2B9900170020D06B /* Constants.swift */; };
+		39BEF1822B9904680020D06B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEF1812B9904680020D06B /* SearchVC.swift */; };
 		93AEC4272B97041100705498 /* HaloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4262B97041100705498 /* HaloButton.swift */; };
 		93AEC42A2B97085800705498 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC4292B97085800705498 /* Properties.swift */; };
 		93AEC42D2B97098000705498 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEC42C2B97098000705498 /* UIColor + Extension.swift */; };
@@ -37,6 +39,8 @@
 		395D9A7C2B96532700BF527F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395D9A7F2B96532700BF527F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		395D9A812B96532700BF527F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BEF17F2B9900170020D06B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		39BEF1812B9904680020D06B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		93AEC4262B97041100705498 /* HaloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaloButton.swift; sourceTree = "<group>"; };
 		93AEC4292B97085800705498 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		93AEC42C2B97098000705498 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		395D9A722B96532600BF527F /* HaloHaven */ = {
 			isa = PBXGroup;
 			children = (
+				39BEF17E2B9900020020D06B /* Constants */,
 				93AEC4302B9731AA00705498 /* Resources */,
 				93AEC42B2B97095300705498 /* Helper + Extension */,
 				93AEC4282B97082B00705498 /* Properties */,
@@ -93,6 +98,14 @@
 				395D9A812B96532700BF527F /* Info.plist */,
 			);
 			path = HaloHaven;
+			sourceTree = "<group>";
+		};
+		39BEF17E2B9900020020D06B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				39BEF17F2B9900170020D06B /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		93AEC4252B9703C700705498 /* AssetClasses */ = {
@@ -139,6 +152,7 @@
 				395D9A772B96532600BF527F /* ViewController.swift */,
 				93AEC4312B9731D100705498 /* MatchListVC.swift */,
 				93AEC4332B9735E100705498 /* TabBarController.swift */,
+				39BEF1812B9904680020D06B /* SearchVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -248,8 +262,10 @@
 				93AEC4342B9735E100705498 /* TabBarController.swift in Sources */,
 				395D9A742B96532600BF527F /* AppDelegate.swift in Sources */,
 				93AEC4362B974C0200705498 /* CustomTabBarHelper.swift in Sources */,
+				39BEF1802B9900170020D06B /* Constants.swift in Sources */,
 				395D9A762B96532600BF527F /* SceneDelegate.swift in Sources */,
 				93AEC42D2B97098000705498 /* UIColor + Extension.swift in Sources */,
+				39BEF1822B9904680020D06B /* SearchVC.swift in Sources */,
 				93AEC4322B9731D100705498 /* MatchListVC.swift in Sources */,
 				93AEC4412B9756E100705498 /* BaseVC.swift in Sources */,
 				93AEC4452B97606700705498 /* MatchListCell.swift in Sources */,
