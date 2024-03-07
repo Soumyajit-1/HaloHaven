@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xOk-Ac-eLq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xOk-Ac-eLq">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -277,19 +276,148 @@
                                     <outlet property="delegate" destination="Pe4-8G-xUg" id="TOy-20-zWv"/>
                                 </connections>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pGA-q9-Tf9">
+                                <rect key="frame" x="16" y="165" width="361" height="653"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pNm-Um-KkS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tLR-pn-KZH" firstAttribute="leading" secondItem="pNm-Um-KkS" secondAttribute="leading" id="1ZH-LL-hvd"/>
+                            <constraint firstItem="pGA-q9-Tf9" firstAttribute="top" secondItem="tLR-pn-KZH" secondAttribute="bottom" id="Cfp-8Q-lk7"/>
                             <constraint firstItem="tLR-pn-KZH" firstAttribute="top" secondItem="pNm-Um-KkS" secondAttribute="top" constant="50" id="CyM-tl-6gm"/>
+                            <constraint firstItem="pNm-Um-KkS" firstAttribute="bottom" secondItem="pGA-q9-Tf9" secondAttribute="bottom" id="DqZ-Xd-FVp"/>
+                            <constraint firstItem="pGA-q9-Tf9" firstAttribute="leading" secondItem="pNm-Um-KkS" secondAttribute="leading" constant="16" id="E3b-gM-Ex3"/>
                             <constraint firstItem="tLR-pn-KZH" firstAttribute="trailing" secondItem="pNm-Um-KkS" secondAttribute="trailing" id="G4n-hJ-7oe"/>
+                            <constraint firstItem="pNm-Um-KkS" firstAttribute="trailing" secondItem="pGA-q9-Tf9" secondAttribute="trailing" constant="16" id="OZk-EQ-YKv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="tLR-pn-KZH" id="H8x-5j-19W"/>
+                        <outlet property="tableView" destination="pGA-q9-Tf9" id="9IC-qC-06n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zn-fN-yvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2535" y="-4"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="DNz-op-nBm">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="mzl-07-Mwd" customClass="ProfileVC" customModule="HaloHaven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bYp-ZY-kj8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pp" translatesAutoresizingMaskIntoConstraints="NO" id="U96-5g-rLk">
+                                <rect key="frame" x="0.0" y="114.99999999999999" width="393" height="255.66666666666663"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-WU-60j">
+                                <rect key="frame" x="16.000000000000014" y="402.66666666666669" width="233.33333333333337" height="33.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaS-Qo-mnp">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soumyajit Pal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2f-Ov-Edo">
+                                        <rect key="frame" x="81.000000000000014" y="0.0" width="152.33333333333337" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2J-Um-0x7">
+                                <rect key="frame" x="16" y="674" width="361" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="v4k-oY-QGh">
+                                        <rect key="frame" x="84.666666666666686" y="8" width="192" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0e-jn-wOJ" customClass="HaloButton" customModule="HaloHaven" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="MatchButton"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="#E94057"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61l-3Q-Vf5" customClass="HaloButton" customModule="HaloHaven" customModuleProvider="target">
+                                                <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Cross"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="192" id="NY2-5s-eRL"/>
+                                            <constraint firstAttribute="height" constant="64" id="ZfL-VH-7ES"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="v4k-oY-QGh" firstAttribute="centerY" secondItem="Q2J-Um-0x7" secondAttribute="centerY" id="MaR-Vr-Fa2"/>
+                                    <constraint firstAttribute="height" constant="80" id="QtD-G1-Jvz"/>
+                                    <constraint firstItem="v4k-oY-QGh" firstAttribute="centerX" secondItem="Q2J-Um-0x7" secondAttribute="centerX" id="xGT-tx-v3D"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-eO-0tx">
+                                <rect key="frame" x="16" y="460.33333333333331" width="360" height="33.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking For: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ1-6e-nmP">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serious Relationship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7A-Cm-NXy">
+                                        <rect key="frame" x="151.33333333333337" y="0.0" width="208.66666666666663" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HcU-ez-HhG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U96-5g-rLk" firstAttribute="top" secondItem="HcU-ez-HhG" secondAttribute="top" constant="56" id="8WJ-qv-nxa"/>
+                            <constraint firstItem="CW2-WU-60j" firstAttribute="leading" secondItem="HcU-ez-HhG" secondAttribute="leading" constant="16" id="BpF-cu-vew"/>
+                            <constraint firstItem="Q2J-Um-0x7" firstAttribute="leading" secondItem="HcU-ez-HhG" secondAttribute="leading" constant="16" id="FD5-62-BuN"/>
+                            <constraint firstItem="HcU-ez-HhG" firstAttribute="trailing" secondItem="U96-5g-rLk" secondAttribute="trailing" id="IKH-Xj-w4n"/>
+                            <constraint firstItem="CW2-WU-60j" firstAttribute="top" secondItem="U96-5g-rLk" secondAttribute="bottom" constant="32" id="RDf-SZ-s2h"/>
+                            <constraint firstItem="Hkc-eO-0tx" firstAttribute="top" secondItem="CW2-WU-60j" secondAttribute="bottom" constant="24" id="Tzp-WW-fes"/>
+                            <constraint firstItem="U96-5g-rLk" firstAttribute="leading" secondItem="HcU-ez-HhG" secondAttribute="leading" id="Ykc-2y-mVT"/>
+                            <constraint firstItem="Hkc-eO-0tx" firstAttribute="leading" secondItem="HcU-ez-HhG" secondAttribute="leading" constant="16" id="inv-Eo-VpZ"/>
+                            <constraint firstItem="HcU-ez-HhG" firstAttribute="bottom" secondItem="Q2J-Um-0x7" secondAttribute="bottom" constant="64" id="weC-Er-nM3"/>
+                            <constraint firstItem="HcU-ez-HhG" firstAttribute="trailing" secondItem="Q2J-Um-0x7" secondAttribute="trailing" constant="16" id="xxU-vh-yh8"/>
+                            <constraint firstItem="U96-5g-rLk" firstAttribute="height" secondItem="bYp-ZY-kj8" secondAttribute="height" multiplier="0.3" id="ytS-XG-X3W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="R2f-Ov-Edo" id="uDX-tg-QEg"/>
+                        <outlet property="optionsView" destination="Q2J-Um-0x7" id="Jhi-4H-FKL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0W-cV-d3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3356" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x5t-22-aYw">
@@ -329,23 +457,26 @@
     </designables>
     <resources>
         <image name="AppleLogo" width="25" height="28"/>
+        <image name="Cross" width="50" height="50"/>
         <image name="FBLogo" width="32" height="32"/>
         <image name="GoogleLogo" width="28" height="28"/>
         <image name="HaloHaven" width="539" height="463"/>
+        <image name="MatchButton" width="48" height="48"/>
+        <image name="pp" width="682" height="642"/>
         <namedColor name="#E94057">
             <color red="0.9137254901960784" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

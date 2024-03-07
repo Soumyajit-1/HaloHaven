@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Foundation
 
 class SearchVC: BaseVC {
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
     
     let data = Constants.profileData
     var filteredData: [String]?
@@ -16,79 +18,65 @@ class SearchVC: BaseVC {
     override func viewDidLoad(){
         super.viewDidLoad()
         setUpNavBar()
+        setUpTableView()
+    }
+
+    func setUpTableView(){
+        filteredData = data
+        searchBar.delegate = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "SearchProfileCell", bundle: nil), forCellReuseIdentifier: "SearchProfileCell")
+        tableView.showsVerticalScrollIndicator = false
+        
     }
     
-
     func setUpNavBar(){
-        self.navBar.title.text = "Search"
-        self.navBar.backBtn.isHidden = true
+        navBar.currentNavController = self.navigationController
+        navBar.title.text = "Search"
+        navBar.backBtn.isHidden = true
     }
-
 }
 
-extension SearchVC: UITableViewDataSource,UISearchBarDelegate{
+extension SearchVC: UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return filteredData?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchProfileCell", for: indexPath) as! SearchProfileCell
+        cell.name.text = filteredData?[indexPath.row]
+        return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == ""
+        {
+            searchBar.perform(#selector(self.resignFirstResponder), with: nil, afterDelay: 0.1)
+        }
+        filteredData = []
+        if searchText == ""{
+            filteredData = data
+        }else{
+            for val in data{
+                if val.lowercased().contains(searchText.lowercased()){
+                    filteredData?.append(val)
+                }
+            }
+        }
+        self.tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+        vc.name = (filteredData?[indexPath.row])!
+        vc.isOptionsViewHidden = false
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
-
-
-/*
- import UIKit
-
- class SearchTableViewController: UITableViewController,UISearchBarDelegate{
-     @IBOutlet weak var searchBar : UISearchBar!
-     let data = ["apple","Orange","banana","potato","Mango"]
-     var filteredData : [String]!
-     override func viewDidLoad() {
-         super.viewDidLoad()
-         searchBar.delegate = self
-         filteredData = data
-     }
-
-     // MARK: - Table view data source
-
-     override func numberOfSections(in tableView: UITableView) -> Int {
-         // #warning Incomplete implementation, return the number of sections
-         return 1
-     }
-
-     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         // #warning Incomplete implementation, return the number of rows
-         return filteredData.count
-     }
-     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-         cell.textLabel?.text = filteredData[indexPath.row]
-         return cell
-     }
-
- }
-
- //MARK: SearchBar Extension
- extension SearchTableViewController{
-     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-         filteredData = []
-         if searchText == ""{
-             filteredData = data
-         }else{
-             for val in data{
-                 if val.lowercased().contains(searchText.lowercased()){
-                     filteredData.append(val)
-                 }
-             }
-         }
-        
-         
-         self.tableView.reloadData()
-     }
- }
-
- */
